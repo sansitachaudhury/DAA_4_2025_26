@@ -53,7 +53,7 @@ int main() {
 
     auto duration = duration_cast<milliseconds>(end - start);
 
-    cout << "exec time(ms) = " << duration.count() << endl;
+    cout << "exec time(ms): " << duration.count() << endl;
     cout << "n = " << n << endl;
     cout << "no of operations: " << countop << endl;
     cout << "depth of tree:" << maxdep << endl;
@@ -61,3 +61,8 @@ int main() {
 
     return 0;
 }
+
+
+
+//recurrence relation: T(n) = 3T(n/2) + 2n
+//time complexity: O(log2(3)) (Case 1 of Master's Theorem was applied)
